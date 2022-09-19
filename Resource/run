@@ -1,0 +1,5 @@
+#!/bin/bash
+fileNameInput="${1}.cpp"
+fileNameOutput="a"
+[ ! -z "$2" ] && fileNameOutput=$2 
+g++ -std=c++17 -O2 $fileNameInput -o $fileNameOutput -Wall
